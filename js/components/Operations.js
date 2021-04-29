@@ -1,7 +1,9 @@
 import React from "react";
 import Operation from "./Operation";
 
-export default function Operations() {
+export default function Operations(props) {
+    const {taskID, form, setForm, operations, setOperations, status} = props;
+
     return (
         <>
             <div className="card-body">

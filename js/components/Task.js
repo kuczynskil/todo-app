@@ -1,7 +1,8 @@
 import React from "react";
-import Operation from "./Operation";
+import Operations from "./Operation";
 
-export default function Task() {
+export default function Task(props) {
+    const {title, description, id, status, onRemoveTask} = props;
     return (
         <section className="card mt-5 shadow-sm">
             <div className="card-header d-flex justify-content-between align-items-center">
@@ -35,7 +36,7 @@ export default function Task() {
                     </button>
                 </div>
             </div>
-            <Operation/>
+            <Operations/>
         </section>
 
     )
