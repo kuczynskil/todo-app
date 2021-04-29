@@ -1,8 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Operations from "./Operation";
 
 export default function Task(props) {
     const {title, description, id, status, onRemoveTask} = props;
+
+    useEffect(() => {
+
+    }, [])
     return (
         <section className="card mt-5 shadow-sm">
             <div className="card-header d-flex justify-content-between align-items-center">
