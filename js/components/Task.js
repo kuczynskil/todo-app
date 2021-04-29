@@ -1,4 +1,5 @@
 import React from "react";
+import Operation from "./Operation";
 
 export default function Task() {
     return (
@@ -12,8 +13,8 @@ export default function Task() {
 
                 <div>
 
-                      {/*Przyciski "Add operation" i "Finish" mają być widoczne*/}
-                      {/*tylko jeżeli status zadania jest "open"*/}
+                    {/*Przyciski "Add operation" i "Finish" mają być widoczne*/}
+                    {/*tylko jeżeli status zadania jest "open"*/}
 
                     <button className="btn btn-info btn-sm mr-2">
                         Add operation
@@ -26,17 +27,15 @@ export default function Task() {
                     </button>
 
 
-                     {/*Przycisk usuwania ma być widoczny tylko*/}
-                     {/*  jeżeli nie ma żadnych operacji w zadaniu*/}
+                    {/*Przycisk usuwania ma być widoczny tylko*/}
+                    {/*  jeżeli nie ma żadnych operacji w zadaniu*/}
 
                     <button className="btn btn-outline-danger btn-sm ml-2">
                         <i className="fas fa-trash false"></i>
                     </button>
                 </div>
             </div>
-
-
-              {/*Komponent Operations */}
+            <Operation/>
         </section>
 
     )
