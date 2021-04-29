@@ -1,4 +1,5 @@
 import React from "react";
+import Operation from "./Operation";
 
 export default function Operations() {
     return (
@@ -21,7 +22,7 @@ export default function Operations() {
             </div>
 
             <ul className="list-group list-group-flush">
-                {/*Komponenty Operation */}
+                <Operation/>
             </ul>
         </>
     )
