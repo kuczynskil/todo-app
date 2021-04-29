@@ -1,12 +1,16 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import Operations from "./Operation";
+import {getOperations} from "../tasks";
 
 export default function Task(props) {
     const {title, description, id, status, onRemoveTask} = props;
 
-    useEffect(() => {
+    const [operations, setOperations] = useState([]);
 
-    }, [])
+    useEffect(() => {
+        getOperations(id, setOperations)
+    }, []);
+
     return (
         <section className="card mt-5 shadow-sm">
             <div className="card-header d-flex justify-content-between align-items-center">
