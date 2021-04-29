@@ -9,7 +9,6 @@ function App() {
         getTasks(setTasks);
     }, [])
 
-    console.log(tasks);
     return <h1>Hello World</h1>
 }
 
